@@ -50,7 +50,7 @@ DESCRIPTION:
 
 EXAMPLES:
   1. Add a lifecycle rule with an expiration action for all objects in mybucket.
-     {{.Prompt}} {{.HelpName}} --expire-days "200" myminio/mybucket
+     {{.Prompt}} {{.HelpName}} --expiry-days "200" myminio/mybucket
 
   2. Add a lifecycle rule with a transition and a noncurrent version transition action for objects with prefix doc/ in mybucket.
      Tiers must exist in MinIO. Use existing tiers or add new tiers.
@@ -65,7 +65,7 @@ EXAMPLES:
           myminio/mybucket/
 
   3. Add a lifecycle rule with an expiration and a noncurrent version expiration action for all objects with prefix doc/ in mybucket.
-     {{.Prompt}} {{.HelpName}} --prefix "doc/" --expire-days "300" --noncurrent-expire-days "100" \
+     {{.Prompt}} {{.HelpName}} --prefix "doc/" --expiry-days "300" --noncurrent-expiration-days "100" \
           myminio/mybucket/
 `,
 }
